@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap');
+@import url('../webfonts/gotham\ bold/stylesheet.css');
+
+
+/*-----logo------*/
+#banner-logo {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.responsive-logo {
+    display: none;
+}
+
+.bar {
+    display: block;
+    height: 5px;
+    width: 42px;
+    background-color: white;
+    margin: 8px auto;
+}
+
+.hamburger {
+    display: none;
+    float: right;
+    margin-top: 29px;
+    cursor: pointer;
+    padding-right: 41px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 19px;
+    margin-right: 55px;
+    margin-left: 55px;
+}
+
+
+.left-menu,
+.right-menu {
+    width: 33.33%;
+    display: flex;
+}
+
+.left-menu li,
+.right-menu li {
+    list-style-type: none;
+    width: 50%;
+}
+
+.left-menu a {
+    text-align: right;
+}
+
+.left-menu .dropdown-content a {
+    text-align: center;
+}
+
+li .dropbtn {
+    width: 100%;
+    text-align: right;
+}
+
+ul li a {
+    width: 100%;
+    display: inline-block;
+}
+
+.left-menu,
+.about {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.left-menu,
+.gallery {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.right-menu,
+.exhibition {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.right-menu,
+.contact {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+
+.left-menu .about:hover {
+    color: #217BBF;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+.left-menu .gallery:hover {
+    color: #ED1F24;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+.right-menu .exhibition:hover {
+    color: #2AB46F;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+.right-menu .contact:hover {
+    color: #EEC318;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+/* Dropdown Button-gallery */
+
+.dropbtn {
+    color: white;
+    background-color: black;
+    font-size: 19px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    color: #ED1F24;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    text-decoration: none;
+    z-index: 999;
+    padding: 65px 19px 12px 19px;
+    transform: translateX(-50%);
+    left: 86%;
+    width: 180px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+}
+
+
+.dropdown-content a:hover {
+    background-color: red;
+    color: white;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width:950px) {
+
+    .responsive-logo {
+        text-align: left;
+        padding-top: 16px;
+        padding-bottom: 0;
+        position: absolute;
+        top: 0px;
+        padding-left: 42px;
+        display: block;
+    }
+
+    .responsive-logo img {
+        width: 73px;
+        height: auto;
+    }
+
+    .header-box {
+        overflow: overlay;
+        margin: auto;
+        line-height: 91px;
+    }
+
+    /*menu bar*/
+    .nav-menu {
+        display: none;
+    }
+
+    /*-----logo------*/
+    #banner-logo {
+        text-align: left;
+        padding-top: 16px;
+        padding-bottom: 0;
+        position: absolute;
+        top: 0px;
+        padding-left: 42px;
+    }
+
+    #banner-logo img {
+        width: 73px;
+        height: auto;
+    }
+
+    .left-menu,
+    .right-menu {
+        display: block;
+        width: 100%;
+    }
+
+    .left-menu a,
+    li .dropbtn {
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: block;
+        padding-top: 22vh;
+        position: fixed;
+        left: -55px;
+        height: 100vh;
+        background-color: black;
+        width: 100%;
+    }
+
+    .left-menu li,
+    .right-menu li {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        height: 79px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(14px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .header-box .left-menu .about,
+    .header-box .right-menu .exhibition,
+    .header-box .right-menu .contact {
+        font-size: 42px;
+    }
+
+    .header-box .left-menu .about:hover,
+    .header-box .right-menu .exhibition:hover,
+    .header-box .right-menu .contact:hover {
+        color: white;
+    }
+
+
+    .dropbtn {
+        color: white;
+        background-color: black;
+        font-size: 45px;
+        font-family: 'Montserrat';
+        text-decoration: none;
+        font-weight: 800;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn.active,
+    .dropbtn:hover,
+    .dropbtn:focus {
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-size: 45px;
+        font-weight: 800;
+        transition: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        left: 0;
+        height: 309px;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: block;
+        padding: 0;
+        transform: translateX(0);
+        margin: auto;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        padding: 8px 0;
+        display: block;
+        font-size: 22px;
+        width: 100%;
+        line-height: 1.6;
+        margin-top: 11px;
+
+    }
+
+
+    .dropdown-content a:hover {
+        background-color: black;
+    }
+
+    .dropdown-content.active,
+    .dropdown-content:hover {
+        background-color: black;
+    }
+
+    .left-menu li,
+    .right-menu li {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+
+}

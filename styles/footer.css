@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap');
+@import url('../webfonts/gotham\ bold/stylesheet.css');
+
+/*---footer---*/
+footer {
+    background-color: #0B0B0B;
+    height: 345px;
+}
+
+#footer-logo {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 8px;
+}
+
+#footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-nav li {
+    margin: 0 50px;
+}
+
+#footer-nav,
+.about {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+#footer-nav,
+.gallery {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+#footer-nav,
+.exhibition {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+#footer-nav,
+.contact {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/*---hover---*/
+
+#footer-nav,
+.about:hover {
+    color: #217BBF;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+s #footer-nav,
+.gallery:hover {
+    color: #ED1F24;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+#footer-nav,
+.exhibition:hover {
+    color: #2AB46F;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+#footer-nav,
+.contact:hover {
+    color: #EEC318;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+/*---social media icon---*/
+
+.social-media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon img {
+    margin: 38px 12px;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+/*----Apply after hover image-----*/
+.social-icon.insta:hover img {
+    content: url("../images/insta\ icon\ 2.svg");
+}
+
+.social-icon.fb:hover img {
+    content: url("../images/fb\ icon\ 2.svg");
+}
+
+.social-icon.mail:hover img {
+    content: url("../images/mail\ icon\ 2.svg");
+}
+
+.social-icon.twitter:hover img {
+    content: url("../images/twitter\ icon2.svg");
+}
+
+#footer-copy {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 11px;
+    padding-bottom: 12px;
+}
+
+@media (max-width:834px) {
+
+    /*---hover---*/
+    #footer-nav,
+    .about:hover,
+    .gallery:hover,
+    .exhibition:hover,
+    .contact:hover {
+        color: white;
+        font-size: 18px;
+        transition: none;
+    }
+
+    #footer-nav,
+    .about,
+    .gallery,
+    .exhibition,
+    .contact {
+        font-size: 18px;
+    }
+
+    #footer-logo img {
+        width: 90px;
+    }
+
+    #footer-nav li {
+        margin: 0 40px;
+    }
+
+    .social-icon:hover img {
+        transform: none;
+        transition:none;
+    }
+
+    .social-icon.insta:hover img,
+    .social-icon.fb:hover img,
+    .social-icon.mail:hover img,
+    .social-icon.twitter:hover img {
+        content: none;
+    }
+}
+
+@media (max-width:593px) {
+
+    footer {
+        height: 515px;
+    }
+
+    #footer-nav {
+        flex-direction: column;
+        margin: 30px 85px;
+    }
+
+    #footer-nav ul {
+        display: inline;
+        padding: 0;
+        text-align: center;
+    }
+
+    #footer-nav li {
+        margin: 22px 85px;
+    }
+
+    .social-icon img {
+        margin: 0 12px;
+      }
+
+      .social-media-icon {
+        padding-bottom: 34px;
+
+}
+}
